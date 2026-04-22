@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado Fax</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; }
+    header { background:#d60000; color:white; padding:15px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; }
+    nav { background:#b80000; color:white; padding:10px; display:flex; gap:15px; }
+    nav a { color:white; text-decoration:none; }
+    .hero { padding:40px; display:flex; justify-content:space-between; align-items:center; }
+    .hero-text { max-width:50%; }
+    .hero h2 { font-size:40px; margin-bottom:10px; }
+    .btn { padding:10px 20px; margin-right:10px; border:none; cursor:pointer; }
+    .btn-primary { background:#d60000; color:white; }
+    .btn-secondary { background:#ccc; }
+    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; padding:20px; }
+    .card { background:white; padding:15px; border-radius:10px; }
+    footer { background:#d60000; color:white; padding:20px; text-align:center; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>FAX Supermercado</h1>
+  <input type="text" placeholder="Buscar productos...">
+</header>
+
+<nav>
+  <a href="#">Ofertas</a>
+  <a href="#">Almacén</a>
+  <a href="#">Bebidas</a>
+  <a href="#">Lácteos</a>
+  <a href="#">Limpieza</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hacé tu pedido sin salir de casa</h2>
+    <p>Envíos a domicilio o retiro en el local</p>
+    <button class="btn btn-primary">Envío a domicilio</button>
+    <button class="btn btn-secondary">Retiro en local</button>
+  </div>
+</section>
+
+<section class="products">
+  <div class="card">
+    <h3>Yerba Mate</h3>
+    <p>$2500</p>
+    <button class="btn btn-primary">Agregar</button>
+  </div>
+  <div class="card">
+    <h3>Leche</h3>
+    <p>$1200</p>
+    <button class="btn btn-primary">Agregar</button>
+  </div>
+  <div class="card">
+    <h3>Pan</h3>
+    <p>$900</p>
+    <button class="btn btn-primary">Agregar</button>
+  </div>
+</section>
+
+<footer>
+  <p>Supermercado Fax - Calidad y confianza</p>
+</footer>
+
+</body>
+</html>
